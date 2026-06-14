@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Nama</title>
+  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="../homepage/homepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <nav class="navbar">
+    <img src="../../images/logo.png" alt="XSports" class="logo">
+    <div class="nav-links">
+      <a id="homepage"  data-i18n="nav_home">HOMEPAGE</a>
+      <a id="aboutus"   data-i18n="nav_aboutus">O NAMA</a>
+      <a id="login"     data-i18n="nav_login">LOGIN</a>
+      <a id="kontakt"   data-i18n="nav_kontakt">KONTAKT</a>
+    </div>
+    <div class="nav-actions">
+      <button id="hederdugme" data-i18n="nav_signup">SIGN UP</button>
+      <button id="langToggle">🌐 EN</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="aboutus-hero">
+    <p class="hero-tag-about" data-i18n="about_tag" style="padding-top: 45px;">Ko smo mi</p>
+    <h1 class="aboutus-hero-naslov" data-i18n="about_naslov">Adrenalin je<br>naš jezik.</h1>
+    <h2 id="extremnisportovi" data-i18n="about_ekstremni">Ekstremni Sportovi</h2>
+    <p class="aboutus-hero-opis" data-i18n="about_opis">Posvećeni smo tome da svakome pružimo pristup najuzbudljivijim ekstremnim sportovima u Srbiji. Naš tim iskusnih instruktora je tu da te provede kroz svaki korak avanture.</p>
+  </div>
+
+  <!-- VREDNOSTI -->
+  <div class="aboutus-vrednosti">
+    <div class="vrednost-kartica">
+      <div class="vrednost-ikona" style="background: rgba(217,132,28,0.12); color: rgb(217,132,28);">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/></svg>
+      </div>
+      <h3 class="vrednost-naslov" data-i18n="vred1_naslov">Sigurnost na prvom mestu</h3>
+      <p class="vrednost-tekst" data-i18n="vred1_tekst">Svaki sport i instruktor prošli su strogu proveru kako bi tvoja avantura bila bezbedan i nezaboravan doživljaj.</p>
+    </div>
+    <div class="vrednost-kartica">
+      <div class="vrednost-ikona" style="background: rgba(158,29,29,0.1); color: rgb(158,29,29);">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M16 11C17.66 11 18.99 9.66 18.99 8C18.99 6.34 17.66 5 16 5C14.34 5 13 6.34 13 8C13 9.66 14.34 11 16 11ZM8 11C9.66 11 10.99 9.66 10.99 8C10.99 6.34 9.66 5 8 5C6.34 5 5 6.34 5 8C5 9.66 6.34 11 8 11ZM8 13C5.67 13 1 14.17 1 16.5V19H15V16.5C15 14.17 10.33 13 8 13ZM16 13C15.71 13 15.38 13.02 15.03 13.05C16.19 13.89 17 15.02 17 16.5V19H23V16.5C23 14.17 18.33 13 16 13Z" fill="currentColor"/></svg>
+      </div>
+      <h3 class="vrednost-naslov" data-i18n="vred2_naslov">Iskusni instruktori</h3>
+      <p class="vrednost-tekst" data-i18n="vred2_tekst">Naši instruktori su sertifikovani profesionalci sa godinama iskustva u ekstremnim sportovima širom sveta.</p>
+    </div>
+    <div class="vrednost-kartica">
+      <div class="vrednost-ikona" style="background: rgba(26,26,26,0.07); color: #1a1a1a;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="currentColor"/></svg>
+      </div>
+      <h3 class="vrednost-naslov" data-i18n="vred3_naslov">Provereni sportovi</h3>
+      <p class="vrednost-tekst" data-i18n="vred3_tekst">Biramo samo sportove i lokacije koje su prošle naše standarde kako bi svaki polaznik imao iskustvo koje pamti ceo život.</p>
+    </div>
+  </div>
+
+  <!-- INSTRUKTORI -->
+  <div class="sivi">
+    <p class="instruktori-tag" data-i18n="instr_tag">Upoznaj tim</p>
+    <h2 id="feel" data-i18n="instr_feel">Feel the excitement</h2>
+    <h1 id="instructors" data-i18n="instr_naslov">Naši Instruktori</h1>
+    <hr class="instruktori-hr">
+
+    <div class="card2">
+      <div class="instruktor-kartica">
+        <div class="instruktor-slika-wrapper"><img src="../../images/kerim.jpg" alt="Daris"></div>
+        <div class="instruktor-body">
+          <h3 class="instruktor-ime">Daris Kurtančaušević</h3>
+          <span class="instruktor-sport">Rafting</span>
+          <p class="instruktor-opis" data-i18n="instr1_opis">Iskusni rafting instruktor koji te vodi kroz najuzbudljivije reke i brze vode širom Balkana.</p>
+        </div>
+      </div>
+      <div class="instruktor-kartica">
+        <div class="instruktor-slika-wrapper"><img src="../../images/sead.jpg" alt="Merdan"></div>
+        <div class="instruktor-body">
+          <h3 class="instruktor-ime">Merdan Bašić</h3>
+          <span class="instruktor-sport" data-i18n="instr2_sport">Planinarenje & Penjanje</span>
+          <p class="instruktor-opis" data-i18n="instr2_opis">Instruktor planinarenja i penjanja, uvek spreman da pokaže put do najviših vrhova.</p>
+        </div>
+      </div>
+      <div class="instruktor-kartica">
+        <div class="instruktor-slika-wrapper"><img src="../../images/tarik.jpg" alt="Ahmed"></div>
+        <div class="instruktor-body">
+          <h3 class="instruktor-ime">Ahmed Biberović</h3>
+          <span class="instruktor-sport">Paraglajding</span>
+          <p class="instruktor-opis" data-i18n="instr3_opis">Stručnjak za paraglajding koji ti otvara nebo i pruža nezaboravno iskustvo letenja.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo-blok">
+        <img src="../../images/logo.png" alt="XSports logo" class="footer-logo">
+        <p class="footer-opis" data-i18n="footer_opis">XSports je platforma koja te povezuje sa najboljim ekstremnim sportovima u Srbiji. Pronađi svoju avanturu i prijavi se danas!</p>
+      </div>
+      <div class="footer-kontakt-blok">
+        <p class="footer-kontakt-naslov" data-i18n="footer_kontakt_naslov">Kontakt</p>
+        <div class="footer-kontakt-red">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8C7.8 13.2 9.8 15.2 12.2 16.4L14 14.6C14.2 14.4 14.6 14.4 14.8 14.5C15.8 14.9 16.9 15.1 18 15.1C18.6 15.1 19 15.5 19 16.1V18.9C19 19.5 18.6 19.9 18 19.9C10.3 19.9 4.1 13.7 4.1 6C4.1 5.4 4.5 5 5.1 5H7.9C8.5 5 8.9 5.4 8.9 6C8.9 7.1 9.1 8.2 9.5 9.2C9.6 9.5 9.5 9.8 9.4 10L7.6 11.8C7.3 11.4 7 11.1 6.6 10.8Z" fill="white"/></svg>
+          +381 62 4444 25
+        </div>
+        <div class="footer-kontakt-red">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="white"/></svg>
+          info@xsports.rs
+        </div>
+        <div class="footer-kontakt-red">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="white"/></svg>
+          Gojka Bacanina 14
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 <span>XSports</span>. <span data-i18n="footer_rights">Sva prava zadržana.</span>
+    </div>
+  </footer>
+
+  <script src="aboutus.js"></script>
+</body>
+</html>

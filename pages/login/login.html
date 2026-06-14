@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login – XSports</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!-- VIDEO POZADINA -->
+  <div class="video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="../../images/pozadina.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="overlay"></div>
+
+  <!-- LOGIN KARTICA -->
+  <div class="login-kartica">
+    <img src="../../images/loginlogo.png" alt="XSports logo" class="login-logo">
+    <h1 class="login-naslov">Dobrodošli</h1>
+    <p class="login-podnaslov">Prijavite se na vaš XSports nalog</p>
+
+    <!-- Greška -->
+    <div class="login-greska" id="login-greska">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+      </svg>
+      <span id="login-greska-tekst">Pogrešno korisničko ime ili lozinka!</span>
+    </div>
+
+    <form id="login-forma">
+      <div class="login-polje">
+        <label for="username">Korisničko ime</label>
+        <input type="text" id="username" placeholder="Unesite korisničko ime" autocomplete="username">
+      </div>
+
+      <div class="login-polje">
+        <label for="password">Lozinka</label>
+        <input type="password" id="password" placeholder="Unesite lozinku" autocomplete="current-password">
+      </div>
+
+      <button type="button" id="submit" class="login-dugme">PRIJAVI SE</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

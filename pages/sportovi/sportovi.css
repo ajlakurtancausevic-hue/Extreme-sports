@@ -1,0 +1,100 @@
+/* =====================
+   SPORTOVI PAGE HERO
+   ===================== */
+.sportovi-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d1f0e 60%, #3d2a10 100%);
+  padding: 100px 60px 90px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sportovi-hero::before {
+  content: '';
+  position: absolute;
+  top: -80px; left: -80px;
+  width: 320px; height: 320px;
+  background: rgba(217, 132, 28, 0.1);
+  border-radius: 50%;
+}
+
+.sportovi-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; right: -60px;
+  width: 260px; height: 260px;
+  background: rgba(217, 132, 28, 0.07);
+  border-radius: 50%;
+}
+
+.sportovi-hero-tag {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(217, 132, 28);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.sportovi-hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5.5em;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 4px;
+  padding-top: 0;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.sportovi-hero p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: rgba(255,255,255,0.65);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+/* =====================
+   SPORTOVI GRID
+   ===================== */
+.sportovi-section {
+  padding: 70px 60px 80px;
+  background: #f5f5f0;
+}
+
+#sports-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  padding: 0;
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 768px) {
+  .sportovi-hero {
+    padding: 70px 20px 60px;
+  }
+
+  .sportovi-hero h1 {
+    font-size: 3.5em;
+  }
+
+  .sportovi-section {
+    padding: 40px 15px 60px;
+  }
+
+  #sports-container {
+    gap: 20px;
+  }
+}

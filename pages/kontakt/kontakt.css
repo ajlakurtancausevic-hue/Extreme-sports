@@ -1,0 +1,439 @@
+/* =====================
+   HERO
+   ===================== */
+.kontakt-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d1f0e 60%, #3d2a10 100%);
+  padding: 90px 60px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.kontakt-hero::before {
+  content: '';
+  position: absolute;
+  top: -80px; left: -80px;
+  width: 320px; height: 320px;
+  background: rgba(217, 132, 28, 0.12);
+  border-radius: 50%;
+}
+
+.kontakt-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; right: -60px;
+  width: 260px; height: 260px;
+  background: rgba(217, 132, 28, 0.08);
+  border-radius: 50%;
+}
+
+.kontakt-naslov {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 5em !important;
+  color: #fff !important;
+  letter-spacing: 5px;
+  padding-top: 0 !important;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.kontakt-podnaslov {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  color: rgba(255,255,255,0.65);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+/* =====================
+   WRAPPER (2 kolone)
+   ===================== */
+.kontakt-wrapper {
+  display: flex;
+  gap: 50px;
+  padding: 70px 80px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* =====================
+   LEVO - Info kartice
+   ===================== */
+.kontakt-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 0 360px;
+}
+
+.info-kartica {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  padding: 24px 26px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.info-kartica:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+
+.info-ikona {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-ikona.telefon {
+  background: rgba(217, 132, 28, 0.12);
+  color: rgb(217, 132, 28);
+}
+
+.info-ikona.email {
+  background: rgba(158, 29, 29, 0.1);
+  color: rgb(158, 29, 29);
+}
+
+.info-ikona.lokacija {
+  background: rgba(26, 26, 26, 0.08);
+  color: #1a1a1a;
+}
+
+.info-tekst {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.info-label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #aaa;
+  font-family: 'Nunito', sans-serif;
+}
+
+.info-vrednost {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: 'Nunito', sans-serif;
+}
+
+.info-napomena {
+  font-size: 13px;
+  color: #888;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* =====================
+   SOCIJALNE MREŽE
+   ===================== */
+.socijalne {
+  background: #1a1a1a;
+  border-radius: 18px;
+  padding: 28px 26px;
+}
+
+.socijalne-naslov {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.socijalne-ikonice {
+  display: flex;
+  gap: 14px;
+}
+
+.soc-dugme {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.25s, background 0.25s;
+}
+
+.soc-dugme.instagram { background: rgba(255,255,255,0.08); color: #e1306c; }
+.soc-dugme.facebook  { background: rgba(255,255,255,0.08); color: #1877f2; }
+.soc-dugme.tiktok    { background: rgba(255,255,255,0.08); color: #fff; }
+.soc-dugme.youtube   { background: rgba(255,255,255,0.08); color: #ff0000; }
+
+.soc-dugme:hover {
+  transform: translateY(-4px) scale(1.1);
+  background: rgba(255,255,255,0.15);
+}
+
+/* =====================
+   DESNO - Mapa
+   ===================== */
+.kontakt-mapa {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mapa-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mapa-tag {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(217, 132, 28);
+  font-family: 'Nunito', sans-serif;
+}
+
+.mapa-naslov {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2em;
+  color: #1a1a1a;
+  letter-spacing: 2px;
+  text-align: left;
+  padding-top: 0;
+}
+
+.mapa-iframe-wrapper {
+  width: 100%;
+  height: 420px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+}
+
+.mapa-adresa-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #555;
+  font-family: 'Nunito', sans-serif;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.mapa-adresa-bar a {
+  color: rgb(217, 132, 28);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mapa-adresa-bar a:hover { text-decoration: underline; }
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 920px) {
+  .kontakt-naslov { font-size: 3.5em !important; }
+
+  .kontakt-wrapper {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 35px;
+  }
+
+  .kontakt-info { flex: none; width: 100%; }
+  .kontakt-mapa { width: 100%; }
+}
+
+@media (max-width: 600px) {
+  .kontakt-hero { padding: 60px 20px; }
+  .kontakt-naslov { font-size: 2.8em !important; }
+  .info-kartica { padding: 16px 20px; }
+  .mapa-iframe-wrapper { height: 300px; }
+}
+
+/* =====================
+   AKTIVNA NAVIGACIJA
+   ===================== */
+.nav-aktivan {
+  color: #1a1a1a !important;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 2px;
+}
+
+/* =====================
+   KONTAKT DESNO (forma + mapa)
+   ===================== */
+.kontakt-desno {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* =====================
+   KONTAKT FORMA
+   ===================== */
+.kontakt-forma-wrapper {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.forma-naslov {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  padding-top: 0;
+  text-align: left;
+}
+
+.forma-polje {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.forma-polje label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.forma-polje input,
+.forma-polje textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  padding: 12px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: none;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+.forma-polje input:focus,
+.forma-polje textarea:focus {
+  border-color: rgb(217, 132, 28);
+  box-shadow: 0 0 0 3px rgba(217, 132, 28, 0.12);
+  background: #fff;
+}
+
+.forma-polje input.input-greska,
+.forma-polje textarea.input-greska {
+  border-color: #e53935;
+  box-shadow: 0 0 0 3px rgba(229, 57, 53, 0.1);
+}
+
+.forma-polje input.input-ok,
+.forma-polje textarea.input-ok {
+  border-color: #43a047;
+  box-shadow: 0 0 0 3px rgba(67, 160, 71, 0.1);
+}
+
+/* Tooltip — pojavljuje se pri fokusu */
+.forma-tooltip {
+  display: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: rgb(217, 132, 28);
+  margin-top: 6px;
+  padding: 6px 12px;
+  background: rgba(217, 132, 28, 0.08);
+  border-radius: 8px;
+  border-left: 3px solid rgb(217, 132, 28);
+}
+
+.forma-tooltip.vidljiv {
+  display: block;
+}
+
+/* Greška — crvena poruka */
+.forma-greska {
+  display: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: #e53935;
+  margin-top: 6px;
+  padding: 6px 12px;
+  background: rgba(229, 57, 53, 0.07);
+  border-radius: 8px;
+  border-left: 3px solid #e53935;
+}
+
+.forma-greska.vidljiva {
+  display: block;
+}
+
+/* Success poruka */
+.forma-success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(67, 160, 71, 0.1);
+  border: 1px solid rgba(67, 160, 71, 0.3);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+/* Submit dugme */
+.forma-dugme {
+  width: 100%;
+  padding: 14px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  background: rgb(217, 132, 28);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 16px rgba(217, 132, 28, 0.3);
+}
+
+.forma-dugme:hover {
+  background: rgb(180, 100, 10);
+  transform: scale(1.02);
+}
+
+@media (max-width: 920px) {
+  .kontakt-desno { width: 100%; }
+  .kontakt-forma-wrapper { padding: 24px 20px; }
+}
